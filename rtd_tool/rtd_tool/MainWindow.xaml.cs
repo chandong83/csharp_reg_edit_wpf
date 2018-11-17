@@ -32,39 +32,17 @@ namespace rtd_tool
         {
             InitializeComponent();
 
-            lblIDHs[0] = lblNumHigh0;
-            lblIDHs[1] = lblNumHigh1;
-            lblIDHs[2] = lblNumHigh2;
-            lblIDHs[3] = lblNumHigh3;
-            lblIDHs[4] = lblNumHigh4;
-            lblIDHs[5] = lblNumHigh5;
-            lblIDHs[6] = lblNumHigh6;
-            lblIDHs[7] = lblNumHigh7;
-            lblIDHs[8] = lblNumHigh8;
-            lblIDHs[9] = lblNumHigh9;
-            lblIDHs[10] = lblNumHighA;
-            lblIDHs[11] = lblNumHighB;
-            lblIDHs[12] = lblNumHighC;
-            lblIDHs[13] = lblNumHighD;
-            lblIDHs[14] = lblNumHighE;
-            lblIDHs[15] = lblNumHighF;
+            for (int i = 0; i < 16; i++)
+            {
+                string str = string.Format("{0:X}", i);
+                lblIDHs[i] = (Label)FindName("lblNumHigh" + str);
+            }
 
-            lblIDLs[0] = lblNumLow0;
-            lblIDLs[1] = lblNumLow1;
-            lblIDLs[2] = lblNumLow2;
-            lblIDLs[3] = lblNumLow3;
-            lblIDLs[4] = lblNumLow4;
-            lblIDLs[5] = lblNumLow5;
-            lblIDLs[6] = lblNumLow6;
-            lblIDLs[7] = lblNumLow7;
-            lblIDLs[8] = lblNumLow8;
-            lblIDLs[9] = lblNumLow9;
-            lblIDLs[10] = lblNumLowA;
-            lblIDLs[11] = lblNumLowB;
-            lblIDLs[12] = lblNumLowC;
-            lblIDLs[13] = lblNumLowD;
-            lblIDLs[14] = lblNumLowE;
-            lblIDLs[15] = lblNumLowF;
+            for (int i = 0; i < 16; i++)
+            {
+                string str = string.Format("{0:X}", i);
+                lblIDLs[i] = (Label)FindName("lblNumLow" + str);                
+            }
 
             for(int i=0;i<16;i++)
             {
